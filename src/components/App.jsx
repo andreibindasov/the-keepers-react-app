@@ -2,15 +2,24 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Main from './Main'
+import Login from './Login'
+
+import { useState, createContext } from 'react'
+
+export const UserContext = createContext()
 
 
 function App() {
-    return <div>
-        <Header />
-        
-        <Main />
+    
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
 
-        <Footer />
+        
+    return <div>
+        <UserContext.Provider value={{isLoggedIn, setIsLoggedIn}}>
+            <Header />
+            {isLoggedIn ? <Main /> : <Login />}
+            <Footer />
+        </UserContext.Provider>
     </div>
 }
 

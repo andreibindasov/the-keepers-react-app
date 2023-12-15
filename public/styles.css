@@ -31,6 +31,10 @@ body{
     /* float: left; */
 
     position: relative;
+    cursor: pointer;
+
+    transition: all .6s ease-out;
+    
 }
 
 .note .circle-img-outer{
@@ -106,6 +110,16 @@ header{
     justify-content: center;
     align-items: baseline;
 }
+
+.main:hover > .note {
+    opacity: 0.3;
+    transform: scale(.81);
+}
+.main:hover .note:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
 footer{
     position: absolute;
     text-align: center;

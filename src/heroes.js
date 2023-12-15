@@ -47,6 +47,24 @@ const heroes = [
         imgUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mundiario.com%2Fmedia%2Fmundiario%2Fimages%2F2019%2F02%2F07%2F2019020703595081073.jpg&f=1&nofb=1&ipt=477d72d41c20732db59fbae6cc9eb13da42d8fd44cc8e475e89420598f15072d&ipo=images",
         infl: "Linguistics, Logic, Philosophy"
     },
+    {
+        id: 9,
+        name: "William James",
+        imgUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.projectglobalawakening.com%2Fwp-content%2Fuploads%2F2020%2F04%2FWilliam-James-American-Psychologist-Philosopher.jpg&f=1&nofb=1&ipt=d68f9a089b8675a0b8df2eccd6aef3c5e62d41f8dbd424f2bf89c50a37ce3fd7&ipo=images",
+        infl: "Psychology, Philosophy"
+    },
+    {
+        id: 10,
+        name: "Wilhelm Wundt",
+        imgUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Facademictree.org%2Fphoto%2F000%2Fcache.000147.Wilhelm_Wundt.jpg&f=1&nofb=1&ipt=35e1c28c6e7f1e982f35ce74ad1f8db5a36d82fe5b6cad5f0eeaf48a2219a586&ipo=images",
+        infl: "Psychology, Logic, Philosophy"
+    },
+    {
+        id: 11,
+        name: "Carl Rogers",
+        imgUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgavsappsychpersonalitylandpatel.weebly.com%2Fuploads%2F2%2F4%2F2%2F6%2F24267679%2F1806361.jpg%3F195&f=1&nofb=1&ipt=e90ba633799aa9a68316cf0905d15a187db61171e3319c624ee51736a933540e&ipo=images",
+        infl: "Psychology"
+    },
 
 ]
 
