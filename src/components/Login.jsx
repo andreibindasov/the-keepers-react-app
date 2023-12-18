@@ -13,6 +13,8 @@ const Login = () => {
 
     const [timeState, setTimeState] = useState(now)
 
+    const [title, setTitle] = useState('Provide your credentials to access the content:')
+
     const updateTime = () => {
         const newNow = new Date().toLocaleTimeString()
         setTimeState(newNow)
@@ -21,7 +23,15 @@ const Login = () => {
     setInterval(updateTime, 1000)
 
     const handleInputChange = (e) => {
-        e.target.name === "username" ? setUsername(e.target.value) : setPassword(e.target.value)
+        const {name, value} = e.target
+        
+        if (name === "username") {
+            const pref = 'Welcome, '
+            setUsername(value)
+            value !== '' ? setTitle(pref + value) : setTitle('Provide your credentials to access the content:')
+         } else {
+            setPassword(value) 
+         }
     }
 
     const handleSubmit = ()=> {
@@ -33,7 +43,7 @@ const Login = () => {
     return(
         <form className='form' onSubmit={handleSubmit}>
             <h3>{timeState}</h3>
-            <h2>Provide your credentials to access the content:</h2><br></br>
+            <h2>{title}</h2><br></br>
             <Input onChange={handleInputChange} type="text" placeholder="Username" name="username" value={username} />
             <Input onChange={handleInputChange} type="password" placeholder="Password" name="password" value={password} />
             <button type="submit">Login</button>

@@ -15,7 +15,7 @@ export default class Header extends Component {
               <div className='masonicKey3'></div>
               <div className='masonicKey11'></div>
               <div className='masonicKey9'></div>
-              <div className='masonicKey22 key22'></div>
+              <div className='masonicKey22'></div>
             </div>
             
       </header>
